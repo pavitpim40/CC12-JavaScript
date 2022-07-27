@@ -32,5 +32,10 @@
 
 
 
-let name = "Pavit"
-let Name = "Hasun"
+// let name = "Pavit"
+// let Name = "Hasun"
+
+
+// name = "Pavit"
+
+console.log(name)
