@@ -13,6 +13,7 @@ let calculator = {
   }
 };
 
-calculator.read();
+calculator.read(); // this == calculator 
+console.log(calculator)
 console.log(calculator.sum());
 console.log(calculator.mul());
