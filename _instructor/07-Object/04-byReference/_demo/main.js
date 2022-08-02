@@ -14,4 +14,3 @@ let admin = user;
 user.name = 'Jame';
 console.log(user.name); // Jame
 console.log(admin.name); // Jame
-  
