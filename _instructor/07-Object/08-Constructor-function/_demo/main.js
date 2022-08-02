@@ -66,17 +66,22 @@ let instance  = new MyConstructorFN()
 // console.log(user2)
 
 
-function User(name) {
-    // S1 : this = {}
-    // S2 : defined
-    this.name = name;
-    this.sayHi = function () {
-      alert('My name is: ' + this.name);
-    };
-    // this = {name : "John" , sayHi : function(){alert('My name is: ' + this.name)}}
-    // return this ==> instance
+// function User(name) {
+//     // S1 : this = {}
+//     // S2 : defined
+//     this.name = name;
+//     this.sayHi = function () {
+//       alert('My name is: ' + this.name);
+//     };
+//     // this = {name : "John" , sayHi : function(){alert('My name is: ' + this.name)}}
+//     // return this ==> instance
 
-  }
+//   }
 
-let john = new User('John');
-john.sayHi(); // My name is: John
+// let john = new User('John');
+// john.sayHi(); // My name is: John
+
+
+// num <== Number
+const num = 255;
+console.log(num)
