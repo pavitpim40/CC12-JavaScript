@@ -82,6 +82,6 @@ let instance  = new MyConstructorFN()
 // john.sayHi(); // My name is: John
 
 
-// num <== Number
-const num = 255;
-console.log(num)
+// // num <== Number
+// const num = 255;
+// console.log(num)
