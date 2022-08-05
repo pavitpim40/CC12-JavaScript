@@ -69,23 +69,23 @@ const person = {
 // const [, , , fourthNumber] = [79, 35, 66, 48];
 // const [a, b, ...c] = numbers; // c => [66 ,48, 55, 77, 99]
 
-const [d = 0] = [];
+// const [d = 0] = [];
 
-// REST with object destructuring
-const { firstName, lastName, ...otherInfo } = person;
+// // REST with object destructuring
+// const { firstName, lastName, ...otherInfo } = person;
 
-const {
-  friends: [{ phoneNumber: firstPhoneNumber }]
-} = person;
+// const {
+//   friends: [{ phoneNumber: firstPhoneNumber }]
+// } = person;
 
-const getFullname = user => {
-  // console.log(`${user.firstName} ${user.lastName}`);
-  const { firstName, lastName } = user;
-  console.log(`${firstName} ${lastName}`);
-};
+// const getFullname = user => {
+//   // console.log(`${user.firstName} ${user.lastName}`);
+//   const { firstName, lastName } = user;
+//   console.log(`${firstName} ${lastName}`);
+// };
 
-const getFullname1 = ({ firstName, lastName }) => {
-  console.log(`${firstName} ${lastName}`);
-};
+// const getFullname1 = ({ firstName, lastName }) => {
+//   console.log(`${firstName} ${lastName}`);
+// };
 
-getFullname({ firstName: 'John', lastName: 'Doe' });
+// getFullname({ firstName: 'John', lastName: 'Doe' });
