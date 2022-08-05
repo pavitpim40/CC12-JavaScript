@@ -102,3 +102,25 @@ class Customer extends User {
 
 const cust = new Customer('VIP', 'Cust', '12', 'customer');
 cust.login();
+
+const arr = [1, 2, 3];
+// console.log(arr);
+// arr.val();
+
+// const arr = new Array()
+// const date = new Date();
+// console.dir(date);
+
+// const func = new Function()
+
+const num = 5;
+num.toFixed(2);
+
+Array.prototype.sum = function () {
+  console.log('Array Sum');
+};
+Array.prototype.map = function () {
+  console.log('map');
+};
+arr.sum();
+arr.map();
