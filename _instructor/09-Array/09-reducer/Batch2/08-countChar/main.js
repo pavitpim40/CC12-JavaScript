@@ -18,7 +18,7 @@ arrChar //?
 const result = arrChar.reduce(function(acc,char) {
 
     if(char.trim() !== ""){
-
+        char //?
     // let foundValue = acc[char] // acc['i'], acc['l']
 
     // if(foundValue) {
