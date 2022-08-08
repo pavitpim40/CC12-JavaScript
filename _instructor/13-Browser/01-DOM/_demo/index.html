@@ -17,7 +17,7 @@
   <body>
     <header id="1">
       <div class="logo">
-        <a href=""><img src="" alt="" /></a>
+        <a href="https://google.com">Go To Google.com</a>
       </div>
     </header>
     <!-- before: insert here -->
@@ -26,15 +26,78 @@
       <!-- prepend: insert here -->
       <div class="main-content">Main Cintent #1</div>
       <div class="main-content">Main Content #2</div>
-      <input name="username" id="username" value="" />
-      <button>Click</button>
+      <form action="https://google.com" method="post">
+        <input name="username" id="username" value="" />
+        <input name="password" id="password" value="" />
+        <button type="submit">Click</button>
+        <button type="reset">Reset</button>
+      </form>
       <!-- append: insert here -->
     </main>
     <!-- after: insert here -->
-    <footer></footer>
+    <footer>
+      <!-- <button onclick="alert('click footer')">Click Footer</button> -->
+      <button>Click Footer</button>
+    </footer>
     <script>
-      const header = document.querySelector('#\\31');
-      console.log(header);
+      const aEle = document.querySelector('a');
+      aEle.addEventListener('click', function (event) {
+        event.preventDefault();
+        alert('Oh my god');
+      });
+
+      // const cb = function (event) {
+      //   console.log('click form');
+      //   console.log(event);
+      // };
+      // const form = document.querySelector('form');
+      // form.addEventListener('click', cb); // browser execute cb(event)
+      // cb('abcde')
+
+      // const btn = document.querySelector('footer button');
+
+      // const handleFunc1 = function () {
+      //   alert('click button addEventListener#1');
+      // };
+
+      // btn.addEventListener('click', handleFunc1);
+
+      // btn.addEventListener('click', function (event) {
+      //   // alert('click button addEventListener#2');
+      //   console.log(event);
+      //   console.log(event.target);
+      // });
+
+      // btn.removeEventListener('click', handleFunc1);
+
+      // btn.addEventListener('click', function () {
+      //   alert('click button addEventListener#1');
+      // });
+
+      // btn.addEventListener('click', function () {
+      //   alert('click button addEventListener#2');
+      // });
+
+      // btn.removeEventListener('click', function () {
+      //   alert('click button addEventListener#1');
+      // });
+
+      // console.dir(btn);
+      // btn.onclick = function () {
+      //   console.dir(this);
+      //   // alert('click footer DOM property');
+      // };
+
+      // btn.onclick = function () {
+      //   console.log('second handler function');
+      // };
+
+      // setTimeout(function () {
+      //   btn.onclick = null;
+      // }, 10000);
+
+      // const header = document.querySelector('#\\31');
+      // console.log(header);
 
       // const h1 = document.createElement('h1'); // <h1></h1>
       // h1.innerHTML = 'Vanilla JavaScript'; // <h1>Vanilla JavaScript</h1>
